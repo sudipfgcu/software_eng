@@ -77,7 +77,10 @@ Change the Remote Origin URL: Use the following command to change the remote URL
 git remote set-url origin <new-remote-url>
 
 ## Make sure the branch is same
+
 git remote add origin https://github.com/sudipfgcu/software_eng.git
+
 git branch -M main
+
 git push -u origin main
 
