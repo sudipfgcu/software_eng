@@ -34,21 +34,21 @@ Add files to the Staging Area for commit:
 Now to add the files to the git repository for commit:
 
 $ git add .  
-# Adds all the files in the local repository and stages them for commit
+Adds all the files in the local repository and stages them for commit
 
 Commit Changes you made to your Git Repo:
 Now to commit files you added to your git repo:
 
 $ git commit -m "First commit"
-# The message in the " " is given so that the other users can read the message 
+The message in the " " is given so that the other users can read the message 
 
 Add a remote origin and Push:
 Now each time you make changes in your files and save it, it won’t be automatically updated on GitHub. All the changes we made in the file are updated in the local repository. Now to update the changes to the main branch in github:
 
 $ git remote add origin remote_repository_URL
-# sets the new remote
+sets the new remote
 
-## Option 1: Use a Personal Access Token (PAT)
+## How to Connect to Remote Github Repo: Option 1: Use a Personal Access Token (PAT)
 Generate a Personal Access Token (PAT):
 
 Log in to your GitHub account.
@@ -72,7 +72,7 @@ git remote -v
 Change the Remote Origin URL: Use the following command to change the remote URL:
 git remote set-url origin <new-remote-url>
 
-## Make sure the branch is main
+## Make sure the branch is "main"
 
 git remote add origin https://github.com/sudipfgcu/software_eng.git
 
