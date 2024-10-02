@@ -12,20 +12,15 @@ $ git --version
 ## Step 2: Tell Git who you are.
 Introduce yourself. Slide in. Seriously, mention your Git username and email address, since every Git commit will use this information to identify you as the author.
 
-$ git config --global user.name "YOUR_USERNAME"
+$ git config --global user.name "Your_UserName"
 
-$ git config --global user.email "im_satoshi@musk.com"
+$ git config --global user.email "abc@gmail.com"
 
 $ git config --global --list # To check the info you just provided
 
-Initialize Git:
-And to place it under git, enter:
 
-$ touch README.md    # To create a README file for the repository
-$ git init           # Initiates an empty git repository
-
-## Step 4: Let’s Git
-Create a new repository on GitHub. Follow this link.
+## Step 3: Let’s Git
+Create a new repository on GitHub. Follow this link: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
 Now, locate to the folder you want to place under git in your terminal.
 
 $ cd Desktop/your_directory
@@ -48,7 +43,7 @@ $ git commit -m "First commit"
 # The message in the " " is given so that the other users can read the message 
 
 Add a remote origin and Push:
-Now each time you make changes in your files and save it, it won’t be automatically updated on GitHub. All the changes we made in the file are updated in the local repository. Now to update the changes to the master:
+Now each time you make changes in your files and save it, it won’t be automatically updated on GitHub. All the changes we made in the file are updated in the local repository. Now to update the changes to the main branch in github:
 
 $ git remote add origin remote_repository_URL
 # sets the new remote
@@ -66,6 +61,7 @@ git remote set-url origin https://<your-username>:<your-token>@github.com/Soodep
 
 git push -u origin main
 
+## Option 2: Use SSH ( https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 To change remote origin url
 Steps to Change the Remote Origin:
@@ -83,4 +79,24 @@ git remote add origin https://github.com/sudipfgcu/software_eng.git
 git branch -M main
 
 git push -u origin main
+
+##Clone an existing repo from the github to the local directory
+To clone an existing GitHub repository to your local machine, follow these steps:
+
+Copy the repository URL:
+
+Go to the GitHub repository you want to clone.
+Click on the green "Code" button.
+Copy the URL (either HTTPS, SSH, or GitHub CLI).
+Open your GitBash terminal (or command prompt) and navigate to the directory where you want to clone/copy the repository:
+
+
+cd /path/to/your/directory
+Clone the repository: Use the git clone command followed by the repository URL:
+
+
+git clone https://github.com/username/repository-name.git 
+Replace https://github.com/username/repository-name.git with the actual URL you copied.
+
+
 
