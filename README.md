@@ -121,3 +121,5 @@ Merge branch
 =======
 >>>>>>> 507cc1aa75ab694bc2aa9eabf074e17a2f58124d
 #New info added
+
+new sentence added to the file for testing 
