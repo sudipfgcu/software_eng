@@ -113,7 +113,10 @@ Replace https://github.com/username/repository-name.git with the actual URL you 
 
 
 
+<<<<<<< HEAD
 #Git Collaboration
 Invite as a collaborator
 create new branch for each collaborator
 Merge branch
+=======
+>>>>>>> 507cc1aa75ab694bc2aa9eabf074e17a2f58124d
