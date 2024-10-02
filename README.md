@@ -24,11 +24,14 @@ Create a new repository on GitHub. Follow this link: https://docs.github.com/en/
 Now, locate to the folder you want to place under git in your terminal.
 
 $ cd Desktop/your_directory
+
 Initialize Git:
+
 And to place it under git, enter:
 
-$ touch README.md    # To create a README file for the repository
-$ git init           # Initiates an empty git repository
+$ touch README.md     To create a README file for the repository
+$ git init            Initiates an empty git repository
+
 
 Add files to the Staging Area for commit:
 Now to add the files to the git repository for commit:
@@ -36,28 +39,38 @@ Now to add the files to the git repository for commit:
 $ git add .  
 Adds all the files in the local repository and stages them for commit
 
+
 Commit Changes you made to your Git Repo:
 Now to commit files you added to your git repo:
+
 
 $ git commit -m "First commit"
 The message in the " " is given so that the other users can read the message 
 
+
 Add a remote origin and Push:
 Now each time you make changes in your files and save it, it won’t be automatically updated on GitHub. All the changes we made in the file are updated in the local repository. Now to update the changes to the main branch in github:
 
+
 $ git remote add origin remote_repository_URL
 sets the new remote
+
 
 ## How to Connect to Remote Github Repo: Option 1: Use a Personal Access Token (PAT)
 Generate a Personal Access Token (PAT):
 
 Log in to your GitHub account.
 Go to Settings > Developer Settings > Personal Access Tokens > Tokens (classic).
+
 Click on Generate new token.
+
 Choose the appropriate scopes (e.g., repo to access repositories).
+
 Generate the token and copy it (you won’t be able to see it again).
 
-git remote set-url origin https://<your-username>:<your-token>@github.com/Soodep/tutorial.git
+
+Important : git remote set-url origin https://<your-username>:<your-token>@github.com/Soodep/tutorial.git
+
 
 git push -u origin main
 
