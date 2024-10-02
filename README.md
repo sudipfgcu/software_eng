@@ -70,7 +70,7 @@ Generate the token and copy it (you won’t be able to see it again).
 
 
 Important : git remote set-url origin https://<your-username>:<your-token>@github.com/Soodep/tutorial.git
-
+git remote set-url origin https://sudipfgcu:your_token@github.com/sudipfgcu/software_eng.git
 
 git push -u origin main
 
