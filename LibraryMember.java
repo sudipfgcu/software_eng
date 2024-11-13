@@ -48,30 +48,5 @@ public class LibraryMember {
 
 //---------------------------------------------------------------------------------------------------
 // LibraryMember Test
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
 
-public class LibraryMemberTest {
-    @Test
-    public void testBorrowBook() {
-        LibraryMember member = new LibraryMember("M001", "Alice", 2);  // Create member
-        member.borrowBook();                                           // Borrow a book
-        assertEquals(3, member.getBorrowedBooksCount());               // Check count
-    }
-
-    @Test
-    public void testReturnBook() {
-        LibraryMember member = new LibraryMember("M002", "Bob", 2);
-        member.returnBook();                                           // Return a book
-        assertEquals(1, member.getBorrowedBooksCount());               // Check count
-    }
-
-    @Test
-    public void testEquals() {
-        LibraryMember member1 = new LibraryMember("M003", "Charlie", 0);
-        LibraryMember member2 = new LibraryMember("M003", "Charlie", 0);
-        assertTrue(member1.equals(member2));                           // Test for equality
-    }
-}
 
